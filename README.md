@@ -61,3 +61,5 @@ INSERT into itemVenda(idvenda, idproduto, valorunitario, quantidade)
 	('5', '4', '400', '1');
     
 --SELECT * FROM itemVenda;
+
+SELECT idVenda, SUM(valorUnitario * quantidade) FROM itemVenda GROUP BY idVenda;
